@@ -25,7 +25,7 @@
 			select seq_board.nextval from dual			
 		</selectKey> <!-- insertSelectKey메서드가 실행되면 사전에 시퀀스 키를 가져와라!! -->
 		<![CDATA[
-			insert into tbl_board(bno, title, `, writer)
+			insert into tbl_board(bno, title, content, writer)
 			values (#{bno}, #{title}, #{content}, #{writer})
 		]]>		
 	</insert>
